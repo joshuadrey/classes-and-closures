@@ -1,4 +1,4 @@
-/* 
+/*
   Once you complete a problem, refresh ./classes.html in your browser and check to see if the problem's test(s) are passing.
   Passed tests will be indicated by a green circle.
   Failed tests will be indicated by a red X.
@@ -30,7 +30,19 @@
 */
 
 //Code Here
+class Employee {
+  constructor(first_name, last_name, email, age) {
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.email = email;
+    this.age = age;
+    this.makeWidget = function () {
+      return (`${this.first_name} ${last_name} Widget`);
 
+    }
+  }
+
+}
 
 ////////// PROBLEM 2 //////////
 
@@ -48,7 +60,13 @@
 */
 
 //Code Here
+class Manager extends Employee {
+  constructor(first_name, last_name, email, age, report) {
+    super(first_name, last_name, email, age);
+    this.report = report;
 
+  }
+};
 
 ////////// PROBLEM 3 //////////
 
